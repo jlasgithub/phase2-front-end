@@ -1,0 +1,29 @@
+.selected{
+    font-weight: bold;
+}
+
+.row tr:hover:not(.header){
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.row tr:not(.header){
+    padding: 10px;
+}
+
+.row tr:not(.header):nth-child(odd){
+    background-color: #ffd0b6;
+}
+
+.cust-list{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding: 10px;
+    color: #f34079;
+    font-size: large;
+}
