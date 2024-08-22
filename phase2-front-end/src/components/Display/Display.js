@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import './Display.css';
+import axios from 'axios';
 
-function Display(props) {
-
+function Display(props) { 
+  const REST_URL = "http://localhost:8080/api/customers"
   const [state, setState] = useState(props.customers);
 
+ 
   return (
     <div>
       <table className="cust-list">

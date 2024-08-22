@@ -3,6 +3,7 @@ import './App.css';
 import Display from './components/Display/Display.js';
 import Input from './components/Input/Input.js';
 import Login from './components/Login/Login.js';
+import Register from './components/Register/Register.jsx';
 import {returnsCustomers, post, put, deleteById } from './memdb.js'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import {useState, useEffect} from "react";
@@ -144,6 +145,7 @@ function App(props) {
           </div>
         } />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       
     </div>
